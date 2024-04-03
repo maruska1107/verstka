@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&family=Montserrat:ital@0;1&display=swap');
+
+body {
+  font-family: $font-main;
+
+  background-color: $white;
+
+  color: $black;
+
+  font-size: 16px;
+}
+
+a {
+  color: $black;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+a[href^='mailto:'] {
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: $black;
+}
+
+a[href^='tel:'] {
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: $black;
+}
+
+.container {
+  max-width: 1369px;
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.scale {
+  background-repeat: round;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

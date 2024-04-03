@@ -1,0 +1,35 @@
+.row__description {
+  width: 830px;
+}
+.row__description-h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 50px;
+  letter-spacing: 0.2px;
+}
+.row__description-about {
+  font-weight: 500;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 70px;
+  width: 540px;
+  text-align: justify;
+  letter-spacing: -0.4px;
+}
+.row__description-button {
+  width: 316px;
+  font-size: 21px;
+  padding: 18px 68px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 900;
+  border: 1px solid #000;
+  border-radius: 56px;
+  letter-spacing: 0px;
+}
+.row__row-list {
+  width: 446px;
+  padding-top: 8px;
+}/*# sourceMappingURL=row.css.map */

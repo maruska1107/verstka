@@ -1,0 +1,35 @@
+.footer {
+  height: 250px;
+  background-image: url(../../img/footer/footer-bg.jpg);
+
+  &__line {
+    padding-top: 103px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contact {
+  }
+  &__contact-heading {
+    font-weight: 900;
+    font-size: 33px;
+  }
+  &__contact-line {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__email {
+  }
+  &__phone {
+  }
+  &__social-network {
+  }
+  &__icon-line {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+  }
+  &__social-link {
+  }
+}

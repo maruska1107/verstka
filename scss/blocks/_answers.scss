@@ -1,0 +1,41 @@
+.answers {
+  height: 616px;
+  background-image: url(../../img/answer/answer-bg.jpg);
+  padding-top: 165px;
+
+  &__heading {
+    font-weight: 800;
+    font-size: 43px;
+  }
+
+  &__line {
+    display: flex;
+    margin-top: 40px;
+    gap: 105px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 33px;
+    width: 104px;
+    height: 104px;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  &__subheading {
+    font-weight: 700;
+    font-size: 27px;
+  }
+
+  &__description {
+    margin-top: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+}

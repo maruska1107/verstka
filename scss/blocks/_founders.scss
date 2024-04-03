@@ -1,0 +1,10 @@
+.founders {
+  height: 560px;
+  background-image: url(../../img/founders/founders.jpg);
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 133px;
+  }
+}

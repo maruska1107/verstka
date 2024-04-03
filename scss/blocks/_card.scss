@@ -1,0 +1,70 @@
+.card {
+  background-color: $main-color;
+  width: 429px;
+  height: 548px;
+  border-radius: 30px;
+
+  box-shadow: 15px 17px 53px 0 rgba(61, 61, 61, 0.6);
+
+  &__info {
+    height: 70px;
+    padding: 22px;
+    display: flex;
+
+    &-age {
+      font-size: 19px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid $black;
+      text-align: center;
+      line-height: 44px;
+    }
+
+    &-text {
+      margin: 10px 0 0 5px;
+      &--right {
+        margin-left: 190px;
+      }
+    }
+  }
+
+  &__photo {
+    width: 429px;
+    height: 322px;
+    background: #ff6262;
+  }
+
+  &__about {
+    margin: 10px 16px;
+    width: 400px;
+
+    &-name {
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      font-size: 20px;
+    }
+
+    &-description {
+      text-align: justify;
+      font-weight: 500;
+      margin: 10px 0 15px 0;
+      height: 40px;
+    }
+
+    &-more {
+      display: inline-block;
+      padding-top: 12px;
+
+      border: 1px solid $black;
+      border-radius: 105px;
+
+      width: 387px;
+      height: 44px;
+
+      font-weight: 900;
+      text-align: center;
+      color: $black;
+    }
+  }
+}

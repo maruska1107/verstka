@@ -1,0 +1,43 @@
+.catalog {
+  height: 729px;
+  padding-top: 25px;
+  background-image: url(../../img/catalog/catalog-bg.jpg);
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &-h2 {
+      font-weight: 900;
+      font-size: 33px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    &-btn {
+      text-decoration: none;
+      border-radius: 42px;
+      padding: 12px;
+      width: 210px;
+      height: 42px;
+      letter-spacing: 0.1px;
+
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background: #4cadb3;
+      color: #000;
+
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+  }
+}

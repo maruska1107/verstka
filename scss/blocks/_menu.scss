@@ -1,0 +1,13 @@
+.menu {
+  padding: 5px 0;
+
+  &__link {
+    font-weight: 500;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 30px;
+  }
+}

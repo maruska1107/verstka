@@ -1,0 +1,23 @@
+@mixin mediaDesk {
+  @media screen and (max-width: $desk) {
+    @content;
+  }
+}
+
+@mixin mediaDeskMini {
+  @media screen and (max-width: $minidesk) {
+    @content;
+  }
+}
+
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mediaMobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}

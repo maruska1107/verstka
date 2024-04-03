@@ -1,0 +1,21 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/mixins';
+
+//Blocks
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/menu-icon';
+@import './blocks/logo';
+@import './blocks/banner';
+@import './blocks/row';
+@import './blocks/founders';
+@import './blocks/list';
+@import './blocks/catalog';
+@import './blocks/card';
+@import './blocks/answers';
+@import './blocks/products';
+@import './blocks/gallery';
+@import './blocks/footer';
