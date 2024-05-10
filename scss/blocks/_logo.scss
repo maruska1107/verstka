@@ -4,7 +4,11 @@
   z-index: 5;
 
   &__image {
-    margin: 10px 0 0 -17px;
+    & img {
+      filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.3));
+      width: 74px;
+      height: 53px;
+    }
   }
 
   &__title {

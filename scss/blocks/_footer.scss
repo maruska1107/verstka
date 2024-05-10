@@ -1,35 +1,49 @@
 .footer {
-  height: 250px;
-  background-image: url(../../img/footer/footer-bg.jpg);
+  position: relative;
+  padding-bottom: 15px;
+  // bottom: 0;
 
   &__line {
-    padding-top: 103px;
+    padding-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
   }
-  &__contact {
-  }
+
   &__contact-heading {
     font-weight: 900;
-    font-size: 33px;
+    font-size: 26px;
   }
   &__contact-line {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
   }
-  &__email {
-  }
-  &__phone {
-  }
-  &__social-network {
-  }
+
   &__icon-line {
     margin-top: 20px;
     display: flex;
     gap: 24px;
     justify-content: flex-end;
   }
-  &__social-link {
+}
+
+@media (max-width: 800px) {
+  .footer__line {
+    justify-content: center;
+  }
+
+  .footer__contact-heading {
+    font-size: 25px;
+  }
+
+  .footer__icon-line {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer__contact-line {
+    margin-top: 10px;
   }
 }

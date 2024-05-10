@@ -1,0 +1,41 @@
+.event {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+
+  &-header {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffc6327d;
+  }
+
+  &-name {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  &-img {
+    text-align: center;
+
+    & img {
+      max-width: 550px;
+      min-width: 200px;
+
+      max-height: 400px;
+      min-height: 150px;
+
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-description {
+    display: flex;
+    gap: 30px;
+  }
+  &-about {
+    text-align: justify;
+  }
+}

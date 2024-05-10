@@ -1,7 +1,8 @@
 .gallery {
-  height: 1037px;
-  background-image: url(../../img/gallery/gallery-bg.jpg);
+  margin-bottom: 10px;
+  position: relative;
 
+  padding-bottom: 40px;
   &__heading {
     padding-top: 22px;
     font-weight: 800;
@@ -11,11 +12,8 @@
   &__grid-pet {
     margin-top: 43px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    object-fit: cover;
-    grid-row-gap: 36px;
-    grid-column-gap: 42px;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
   }
 
   &__grid-image1 {
@@ -47,5 +45,44 @@
   &__grid-image5 {
     grid-column: 3/4;
     grid-row: 2/4;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    &__grid-image4 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    &__grid-image5 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+  }
+}
+
+@media (max-width: 456px) {
+  .gallery {
+    &__grid-image4 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    &__grid-image5 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    &__grid-image3 {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+
+    &__grid-image6 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      margin-top: -12px;
+    }
   }
 }

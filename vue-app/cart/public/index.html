@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="stylesheet" href="<%= BASE_URL %>main.css" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <main class="main-cart">
+        <section>
+          <div class="container">
+            <table class="table-cart">
+              <thead>
+                <tr>
+                  <th scope="col">Список товаров</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col">Количество</th>
+                  <th scope="col">Итого</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <img src="/img/products/product.png" alt="Product 1" />
+                  </th>
+                  <td>20р</td>
+                  <td>
+                    <div class="quantity">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <input type="text" value="1" />
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                  </td>
+
+                  <td>Итого: 25р.</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <img src="/img/products/product.png" alt="Product 1" />
+                  </th>
+                  <td>20 р.</td>
+                  <td>
+                    <div class="quantity">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <input type="text" value="1" />
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                  </td>
+
+                  <td>Итого: 25р.</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <img src="/img/products/product.png" alt="Product 1" />
+                  </th>
+                  <td>20р</td>
+                  <td>
+                    <div class="quantity">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <input type="text" value="1" />
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                  </td>
+
+                  <td>Итого: 25р.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row" colspan="2">Итоговая сумма</th>
+                  <td class="td-bold">350 р.</td>
+                  <td>
+                    <div classs="total">
+                      <div class="total">
+                        <button>Оформить заказ</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

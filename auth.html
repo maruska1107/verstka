@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <title>Фунтик</title>
+  </head>
+  <body>
+    <div class="wrapper wrapper-cart wrapper-grow">
+      <div class="dop-container">
+        <header class="header">
+          <div class="container">
+            <div class="header__container">
+              <div class="header__logo">
+                <a class="logo__image" href="#!">
+                  <img src="./img/header-bg/Logo.svg" alt="" />
+                </a>
+                <h1 class="logo__title">Фунтик</h1>
+              </div>
+              <div class="header__menu">
+                <div class="menu">
+                  <nav class="menu__body">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Главная</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Питомцы</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Помощь</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">О нас</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Мероприятия</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подписки</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="header__icon">
+                <a href="#" class="cart">
+                  <img src="/img/header-bg/Basket.svg" alt="" />
+                  <div class="cart__count">0</div>
+                </a>
+                <a href="#" class="header__icon-user">
+                  <img src="/img/header-bg/User.svg" alt="" />
+                </a>
+              </div>
+              <div class="header__menu-btn">
+                <button class="menu-icon-btn">
+                  <div class="menu-icon"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <img class="vector-bottom" src="./img/pets/header-bottom.svg" alt="" />
+      </div>
+      <div class="container">
+        <h2 class="h2-cart">Профиль</h2>
+
+        <main class="profile">
+          <div class="profile-flex">
+            <div class="profile__about">
+              <div class="profile__about-img">
+                <img class="" src="" alt="" />
+              </div>
+
+              <div class="profile__about-rating">Ваш рейтинг: 125 баллов</div>
+              <div class="profile__about-toTop">
+                До попадания в топ-рейтинг осталось: 77 баллов
+              </div>
+            </div>
+            <div class="profile__data">
+              <div class="data_item item-1">
+                <label
+                  class="small mb-1"
+                  for="{{ form.first_name.id_for_label }}"
+                  >Имя</label
+                >
+              </div>
+              <div class="data_item item-2">
+                <label
+                  class="small mb-1"
+                  for="{{ form.last_name.id_for_label }}"
+                  >Фамилия</label
+                >
+              </div>
+              <div class="data_item item-3">
+                <label
+                  class="custom-file-label"
+                  for="{{ form.image.id_for_label }}"
+                  >Выберите изображение</label
+                >
+              </div>
+              <div class="data_item item-4">
+                <label class="small mb-1" for="{{ form.username.id_for_label }}"
+                  >Имя пользователя</label
+                >
+              </div>
+              <div class="data_item item-5">
+                <label class="small mb-1" for="{{ form.email.id_for_label }}"
+                  >Адрес электронной почты</label
+                >
+              </div>
+              <div class="data_item item-6">
+                <input
+                  class="btn btn-info btn-block"
+                  type="submit"
+                  value="Сохранить"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- <main class="main-cart">
+        <section>
+          <div class="container">
+            <div class="table-wrap">
+              <table class="table-cart">
+                <thead>
+                  <tr>
+                    <th scope="col">Список товаров</th>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Итого</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="td">
+                      <div class="th-row">
+                        <img
+                          src="./img/products/azitronit.jpg"
+                          alt="Product 1"
+                        />
+                        <div>Название товара</div>
+                      </div>
+                    </td>
+                    <td>20 р.</td>
+                    <td>
+                      <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1" />
+                        <button>+</button>
+                      </div>
+                    </td>
+
+                    <td>Итого: 25р.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="th-row">
+                        <img src="/img/products/purina.jpg" alt="Product 1" />
+                        <div>Название товара</div>
+                      </div>
+                    </td>
+                    <td>20 р.</td>
+                    <td>
+                      <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1" />
+                        <button>+</button>
+                      </div>
+                    </td>
+
+                    <td>Итого: 25р.</td>
+                  </tr>
+                  <tr>
+                    <td class="td-left">
+                      <div class="th-row">
+                        <img src="/img/products/chappi.jpg" alt="Product 1" />
+                        <div>Название товара</div>
+                      </div>
+                    </td>
+                    <td>20 р.</td>
+                    <td>
+                      <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1" />
+                        <button>+</button>
+                      </div>
+                    </td>
+
+                    <td>Итого: 25р.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="do-order">
+              <h3>Итоговая сумма: 350 р.</h3>
+              <div class="total"><button>Оформить заказ</button></div>
+            </div>
+          </div>
+        </section>
+      </main> -->
+
+      <section class="footer scale">
+        <div class="vector">
+          <img class="vector-top" src="./img/footer/footer-vector.svg" alt="" />
+          <div class="vector__grow vector__grow--orange"></div>
+        </div>
+
+        <div class="container">
+          <div class="footer__line">
+            <div class="footer__contact">
+              <h3 class="footer__contact-heading">Наши контакты</h3>
+              <div class="footer__contact-line">
+                <a
+                  href="mailto:Почта@мэйл.ru.ru&body=Клиент?subject=вопрос"
+                  class="footer__email"
+                  >Почта@мэйл.ru</a
+                >
+                <a href="tel:+78121111111" class="footer__phone"
+                  >+7 (909) 223 1212</a
+                >
+              </div>
+            </div>
+            <div class="footer__social-network">
+              <h3 class="footer__contact-heading">Социальные сети</h3>
+              <div class="footer__icon-line">
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/instagram.svg" alt="" />
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/telegram.svg" alt="" />
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/whatsapp.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

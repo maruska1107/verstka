@@ -1,10 +1,28 @@
 .founders {
-  height: 560px;
-  background-image: url(../../img/founders/founders.jpg);
+  position: relative;
+  margin-bottom: 25px;
 
   &__list {
     display: flex;
-    justify-content: center;
-    gap: 133px;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    @include mediaTablet {
+      justify-content: center;
+      row-gap: 0;
+      padding-top: 30px;
+    }
+
+    &:before {
+      @include mediaTablet {
+        content: '';
+        display: block;
+        width: 100%;
+        order: 1;
+        margin-top: 24px;
+      }
+    }
   }
 }

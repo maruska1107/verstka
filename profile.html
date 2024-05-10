@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <title>Фунтик</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dop-container">
+        <header class="header">
+          <div class="container">
+            <div class="header__container">
+              <div class="header__logo">
+                <a class="logo__image" href="#!">
+                  <img src="./img/header-bg/Logo.svg" alt="" />
+                </a>
+                <h1 class="logo__title">Фунтик</h1>
+              </div>
+              <div class="header__menu">
+                <div class="menu">
+                  <nav class="menu__body">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Главная</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Питомцы</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Помощь</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">О нас</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Мероприятия</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link" href="#">Подписки</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="header__icon">
+                <a href="#" class="cart">
+                  <img src="/img/header-bg/Basket.svg" alt="" />
+                  <div class="cart__count">0</div>
+                </a>
+                <a href="#" class="header__icon-user">
+                  <img src="/img/header-bg/User.svg" alt="" />
+                </a>
+              </div>
+              <div class="header__menu-btn">
+                <button class="menu-icon-btn">
+                  <div class="menu-icon"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <img class="vector-bottom" src="./img/pets/header-bottom.svg" alt="" />
+      </div>
+
+      <!-- <div class="active-request">
+        <h3 class="request-h3">Ваши заявки:</h3>
+        <div class="list-requests"></div>
+      </div> -->
+
+      <div class="container main-grow">
+        <h2 class="h2-cart">Профиль</h2>
+
+        <div class="request-row">
+          <div class="profile-request">
+            <h3 class="request-text">У вас 1 активная заявка:</h3>
+            <div class="request-status">Ожидание ответа</div>
+          </div>
+        </div>
+
+        <main class="profile">
+          <div class="profile-flex">
+            <div class="profile__about">
+              <div class="profile__about-img">
+                <img class="" src="" alt="" />
+              </div>
+
+              <div class="profile__about-rating">Ваш рейтинг: 125 баллов</div>
+              <div class="profile__about-toTop">
+                До попадания в топ-рейтинг осталось: 77 баллов
+              </div>
+            </div>
+            <div class="profile__data">
+              <div class="data_item item-1">
+                <label
+                  class="small mb-1"
+                  for="{{ form.first_name.id_for_label }}"
+                  >Имя</label
+                >
+                <input
+                  class="text-field__input"
+                  type="text"
+                  name="login"
+                  id="login"
+                  placeholder="Login"
+                  value="itchief"
+                />
+              </div>
+              <div class="data_item item-2">
+                <label
+                  class="small mb-1"
+                  for="{{ form.last_name.id_for_label }}"
+                  >Фамилия</label
+                >
+                <input
+                  class="text-field__input"
+                  type="text"
+                  name="login"
+                  id="login"
+                  placeholder="Login"
+                  value="itchief"
+                />
+              </div>
+              <div class="data_item item-3">
+                <label class="small mb-1" for="{{ form.username.id_for_label }}"
+                  >Выберите изображение</label
+                >
+                <input
+                  class="text-field__input"
+                  type="file"
+                  name="login"
+                  id="login"
+                  placeholder="Login"
+                  value="itchief"
+                />
+              </div>
+              <div class="data_item item-4 disabled-input">
+                <label class="small mb-1" for="{{ form.username.id_for_label }}"
+                  >Имя пользователя</label
+                >
+                <input
+                  disabled="disabled"
+                  class="text-field__input"
+                  type="text"
+                  name="login"
+                  id="login"
+                  placeholder="Login"
+                  value="itchief"
+                />
+              </div>
+              <div class="data_item item-5 disabled-input">
+                <label class="text-field__label" for="email">Email</label>
+                <div class="text-field__icon text-field__icon_email">
+                  <input
+                    disabled
+                    class="text-field__input"
+                    type="email"
+                    placeholder="alexander@itchief.ru"
+                    value="alexander@itchief.ru"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button-grid-profile">
+              <input
+                class="btn btn-info btn-block"
+                type="submit"
+                value="Сохранить"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <section class="footer scale">
+        <div class="vector">
+          <img class="vector-top" src="./img/footer/footer-vector.svg" alt="" />
+          <div class="vector__grow vector__grow--orange"></div>
+        </div>
+
+        <div class="container">
+          <div class="footer__line">
+            <div class="footer__contact">
+              <h3 class="footer__contact-heading">Наши контакты</h3>
+              <div class="footer__contact-line">
+                <a
+                  href="mailto:Почта@мэйл.ru.ru&body=Клиент?subject=вопрос"
+                  class="footer__email"
+                  >Почта@мэйл.ru</a
+                >
+                <a href="tel:+78121111111" class="footer__phone"
+                  >+7 (909) 223 1212</a
+                >
+              </div>
+            </div>
+            <div class="footer__social-network">
+              <h3 class="footer__contact-heading">Социальные сети</h3>
+              <div class="footer__icon-line">
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/instagram.svg" alt="" />
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/telegram.svg" alt="" />
+                </a>
+                <a href="#" class="footer__social-link">
+                  <img src="/img/footer/whatsapp.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

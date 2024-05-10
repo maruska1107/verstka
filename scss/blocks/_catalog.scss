@@ -1,12 +1,13 @@
 .catalog {
-  height: 729px;
+  position: relative;
   padding-top: 25px;
-  background-image: url(../../img/catalog/catalog-bg.jpg);
+  margin-bottom: 50px;
 
   &__line {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    align-items: center;
 
     &-h2 {
       font-weight: 900;
@@ -14,13 +15,16 @@
       color: #000;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+
+      @media (max-width: 490px) {
+        font-size: 24px;
+      }
     }
 
     &-btn {
       text-decoration: none;
       border-radius: 42px;
-      padding: 12px;
-      width: 210px;
+      padding: 12px 20px;
       height: 42px;
       letter-spacing: 0.1px;
 
@@ -32,12 +36,24 @@
       font-size: 15px;
       text-align: center;
       color: #000;
+
+      @media (max-width: 400px) {
+        font-size: 13px;
+        padding: 12px 5px;
+      }
     }
   }
 
   &__card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+}
+
+.pets__container {
+  & .card {
+    box-shadow: 1px 1px 13px 0px rgba(61, 61, 61, 0.6);
   }
 }

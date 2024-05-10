@@ -1,43 +1,61 @@
+.catalog {
+  & .card {
+    @media (max-width: 1020px) {
+      width: 40%;
+    }
+
+    @media (max-width: 800px) {
+      width: 295px;
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .card:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 674px) {
+    .card:nth-child(3) {
+      display: block;
+    }
+  }
+}
 .card {
   background-color: $main-color;
-  width: 429px;
-  height: 548px;
+  max-width: 350px;
+  min-width: 280px;
   border-radius: 30px;
-
-  box-shadow: 15px 17px 53px 0 rgba(61, 61, 61, 0.6);
+  box-shadow: 1px 1px 53px 0px rgba(61, 61, 61, 0.6);
 
   &__info {
     height: 70px;
-    padding: 22px;
-    display: flex;
+    padding: 20px 14px;
 
     &-age {
+      padding: 2px 7px;
       font-size: 19px;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
+      border-radius: 100%;
       border: 1px solid $black;
       text-align: center;
-      line-height: 44px;
     }
 
-    &-text {
-      margin: 10px 0 0 5px;
-      &--right {
-        margin-left: 190px;
-      }
+    .text__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   &__photo {
-    width: 429px;
-    height: 322px;
-    background: #ff6262;
+    width: 393px;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
   }
 
   &__about {
-    margin: 10px 16px;
-    width: 400px;
+    padding: 10px 14px;
 
     &-name {
       font-weight: 800;
@@ -46,10 +64,9 @@
     }
 
     &-description {
-      text-align: justify;
+      text-align: left;
       font-weight: 500;
       margin: 10px 0 15px 0;
-      height: 40px;
     }
 
     &-more {
@@ -59,12 +76,20 @@
       border: 1px solid $black;
       border-radius: 105px;
 
-      width: 387px;
+      width: 100%;
       height: 44px;
 
       font-weight: 900;
       text-align: center;
       color: $black;
+
+      transition:
+        color 0.2s ease-in,
+        border 0.2s ease-in;
+    }
+    &-more:hover {
+      color: white;
+      border: 2.11px solid white;
     }
   }
 }
