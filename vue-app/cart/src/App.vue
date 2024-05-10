@@ -26,7 +26,9 @@
         </div>
         <div class="do-order">
           <h3>Итоговая сумма: {{ totalAmount }} р.</h3>
-          <div class="total"><button>Оформить заказ</button></div>
+          <div class="total">
+            <button @click="goToOrderPage">Оформить заказ</button>
+          </div>
         </div>
       </div>
     </section>
@@ -38,6 +40,10 @@ import { ref, computed, onMounted } from 'vue';
 import CartRow from './components/CartRow.vue';
 import storageService from '@/services/storage';
 import userService from '@/services/user';
+
+const goToOrderPage = () => {
+  window.location.href = 'http://127.0.0.1:8000/orders/order-create';
+};
 
 const { getUser } = userService();
 const userId = ref(0);
